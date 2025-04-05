@@ -27,7 +27,7 @@ def check_for_update():
         if response.status_code != 200:
             print(f"⚠️  Konnte Versionsinfo nicht abrufen, Statuscode: {response.status_code}")
             return
-        
+
         # Extrahiere die Remote-Version und vergleiche sie mit der lokalen
         remote_version = response.text.strip()
 
@@ -54,10 +54,11 @@ def check_for_update():
 # ----------------------------------
 
 def main():
-    check_for_update()  # Ruft die Update-Funktion auf
-    print(f"📦 Version {VERSION}")
-    print("✅ Hauptfunktion läuft...")
-    time.sleep(50)
+    while True:
+        check_for_update()  # Ruft die Update-Funktion auf
+        print(f"📦 Version {VERSION}")
+        print("✅ Hauptfunktion läuft...")
+        time.sleep(50)
 
 if __name__ == "__main__":
     main()

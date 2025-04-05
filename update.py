@@ -57,7 +57,7 @@ def main():
     check_for_update()  # Ruft die Update-Funktion auf
     print(f"📦 Version {VERSION}")
     print("✅ Hauptfunktion läuft...")
-    time.sleep(500)
+    time.sleep(50)
 
 if __name__ == "__main__":
     main()

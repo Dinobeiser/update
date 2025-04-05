@@ -3,7 +3,7 @@ import sys
 import requests
 import time
 
-VERSION = "1.2.3"  # Deine aktuelle Version
+VERSION = "1.2.4"  # Deine aktuelle Version
 
 REMOTE_VERSION_URL = "https://raw.githubusercontent.com/Dinobeiser/update/main/version.txt"  # Link zur Version
 REMOTE_SCRIPT_URL = "https://raw.githubusercontent.com/Dinobeiser/update/main/update.py"  # Link zum neuesten Skript
